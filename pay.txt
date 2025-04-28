@@ -1,0 +1,3 @@
+接口地址：https://pay.52ddw.com/
+商户ID：1001
+密钥：rAG6GhHJ6Ki29zpnAxi2wxHh1naWiAIn
