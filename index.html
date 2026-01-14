@@ -37,8 +37,32 @@
             font-size: 0.9em;
             color: #663c00;
         }
-        section.share {
+        /* 新增免费体验按钮模块样式 */
+        section.free-experience {
             margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .btn-free-experience {
+            background-color: #007acc;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-size: 1em;
+            text-decoration: none;
+            user-select: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 122, 204, 0.4);
+            display: inline-block;
+        }
+        .btn-free-experience:hover,
+        .btn-free-experience:focus {
+            background-color: #005ea1;
+            outline: none;
+            box-shadow: 0 4px 12px rgba(0, 94, 161, 0.6);
+        }
+        section.share {
+            margin-top: 0; /* 使紧贴新增模块 */
             padding: 20px;
             background-color: #f0f5ff;
             border: 1px solid #adc6ff;
@@ -108,7 +132,8 @@
                 flex-direction: column;
                 gap: 20px;
             }
-            .btn-link {
+            .btn-link,
+            .btn-free-experience {
                 width: 80%;
                 max-width: 300px;
                 margin: 0 auto;
@@ -138,6 +163,15 @@
                 <li>感谢您的理解与配合，祝您使用愉快！</li>
             </ul>
         </section>
+
+        <!-- 新增模块开始 -->
+        <section class="free-experience" aria-label="免费体验游戏云电脑">
+            <a href="https://pcconsole.rdgpu.com/pc/promotion?code=15902" target="_blank" rel="noopener noreferrer" class="btn-free-experience" role="button">
+                点击免费体验5小时游戏云电脑
+            </a>
+        </section>
+        <!-- 新增模块结束 -->
+
         <section class="share">
             <strong>分享内容：</strong>
             <ol>
